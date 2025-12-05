@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Recursos e Referências</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .brand-stripe {
+      width: 20px;
+      height: 100%;
+      background-color: #003366;
+      /* Azul Institucional Escuro */
+      flex-shrink: 0;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 50px 80px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+    }
+
+    .header {
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 15px;
+    }
+
+    .title-accent {
+      width: 60px;
+      height: 6px;
+      background-color: #00aaff;
+      /* Azul Ciano */
+      margin-bottom: 15px;
+      border-radius: 3px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 50px;
+      flex: 1;
+    }
+
+    .resource-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    .resource-card {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .resource-icon {
+      width: 44px;
+      height: 44px;
+      background-color: #e0f2fe;
+      color: #0284c7;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin-right: 18px;
+      flex-shrink: 0;
+    }
+
+    .resource-info {
+      flex: 1;
+    }
+
+    .resource-info h3 {
+      margin: 0 0 2px 0;
+      color: #1e293b;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .resource-info p {
+      margin: 0;
+      color: #64748b;
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+
+    .resource-link {
+      color: #00aaff;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
+      margin-top: 2px;
+      font-size: 0.85rem;
+    }
+
+    .closing-panel {
+      background-color: #003366;
+      color: white;
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .closing-icon {
+      font-size: 70px;
+      color: rgba(255, 255, 255, 0.2);
+      margin-bottom: 25px;
+    }
+
+    .closing-bg-circle {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 180px;
+      height: 180px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+    }
+
+    /* Scrollbar styling for list */
+    .resource-list::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .resource-list::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 3px;
+    }
+
+    .resource-list::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide-container shadow-2xl">
+    <!-- Faixa Lateral -->
+    <div class="brand-stripe"></div>
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+      <!-- Cabeçalho -->
+      <div class="header">
+        <div class="title-accent"></div>
+        <h2 class="text-4xl font-bold text-gray-900 mb-2">Recursos e Encerramento</h2>
+        <p class="text-lg text-gray-500 font-light">Materiais oficiais para aprofundar seu conhecimento em segurança
+          digital e privacidade.</p>
+      </div>
+      <!-- Grid de Conteúdo -->
+      <div class="content-grid">
+        <!-- Coluna da Esquerda: Lista de Recursos -->
+        <div class="flex flex-col h-full">
+          <p class="text-gray-600 mb-4 font-medium uppercase tracking-wider text-sm">Links e Referências Oficiais</p>
+          <div class="resource-list">
+            <!-- Card 1 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="resource-info">
+                <h3>Cartilha de Segurança (CERT.br)</h3>
+                <p>Guias completos e fascículos temáticos sobre privacidade.</p>
+                <span class="resource-link">https://cartilha.cert.br/</span>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <div class="resource-info">
+                <h3>Internet Segura</h3>
+                <p>Dicas, guias e materiais educativos para famílias e educadores.</p>
+                <span class="resource-link">https://internetsegura.br/</span>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-scale-balanced"></i>
+              </div>
+              <div class="resource-info">
+                <h3>LGPD e ANPD</h3>
+                <p>Informações sobre a Lei Geral de Proteção de Dados e seus direitos.</p>
+                <span class="resource-link">https://www.gov.br/anpd/</span>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fas fa-mobile-screen-button"></i>
+              </div>
+              <div class="resource-info">
+                <h3>Consulta de IMEI (Anatel)</h3>
+                <p>Verifique a situação legal de dispositivos móveis antes da compra.</p>
+                <span class="resource-link">https://www.gov.br/anatel/imei</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Coluna da Direita: Encerramento -->
+        <div class="h-full">
+          <div class="closing-panel shadow-lg">
+            <div class="closing-bg-circle"></div>
+            <i class="fas fa-user-shield closing-icon"></i>
+            <h3 class="text-3xl font-bold mb-4">Proteja-se!</h3>
+            <p class="text-blue-100 text-lg mb-6 leading-relaxed">
+              A privacidade é um direito, mas a segurança é uma prática diária. Suas escolhas definem sua proteção.
+            </p>
+            <div class="mt-auto border-t border-blue-800 pt-5 w-full">
+              <p class="text-sm text-blue-300 mb-1">Dúvidas ou Incidentes?</p>
+              <p class="font-bold text-white flex items-center justify-center gap-2">
+                <i class="fas fa-envelope"></i> Contate a equipe de TI
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

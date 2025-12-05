@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Vale a pena trocar dados por descontos?</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .brand-stripe {
+      width: 20px;
+      height: 100%;
+      background-color: #003366;
+      flex-shrink: 0;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 50px 70px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 15px;
+    }
+
+    .title-accent {
+      width: 60px;
+      height: 6px;
+      background-color: #00aaff;
+      margin-bottom: 15px;
+      border-radius: 3px;
+    }
+
+    .columns-container {
+      display: flex;
+      flex: 1;
+      gap: 40px;
+    }
+
+    .col-card {
+      flex: 1;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .col-do {
+      background-color: #f0fdf4;
+      /* Green-50 */
+      border: 1px solid #dcfce7;
+    }
+
+    .col-dont {
+      background-color: #fff1f2;
+      /* Red-50 */
+      border: 1px solid #ffe4e6;
+    }
+
+    .item-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .item-icon {
+      margin-top: 4px;
+      margin-right: 15px;
+      font-size: 1.2rem;
+    }
+
+    /* Tip Box Style - Integrated below columns */
+    .tip-container {
+      margin-top: 25px;
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      color: #1e40af;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide-container shadow-2xl">
+    <div class="brand-stripe"></div>
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <div class="title-accent"></div>
+        <h2 class="text-5xl font-bold text-gray-900 mb-2">Vale a pena trocar dados por descontos?</h2>
+        <p class="text-xl text-gray-500 font-light">Programas de fidelidade oferecem vantagens, mas cobram um preço
+          invisível: sua privacidade.</p>
+      </div>
+      <!-- Columns -->
+      <div class="columns-container">
+        <!-- Column: Pros -->
+        <div class="col-card col-do shadow-sm">
+          <div class="col-header text-green-800">
+            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4 text-green-600">
+              <i class="fas fa-gift text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Prós: Benefícios</h3>
+              <p class="text-sm opacity-75">Vantagens imediatas</p>
+            </div>
+          </div>
+          <div class="item-list">
+            <div class="list-item text-green-900">
+              <i class="fas fa-tags item-icon text-green-600"></i>
+              <div>
+                <p class="font-bold text-lg mb-1">Descontos Reais</p>
+                <p class="text-gray-600 leading-snug">Redução imediata de preços em farmácias e supermercados mediante
+                  identificação.</p>
+              </div>
+            </div>
+            <div class="list-item text-green-900">
+              <i class="fas fa-bullseye item-icon text-green-600"></i>
+              <div>
+                <p class="font-bold text-lg mb-1">Personalização</p>
+                <p class="text-gray-600 leading-snug">Recebimento de ofertas exclusivas alinhadas aos seus hábitos de
+                  consumo.</p>
+              </div>
+            </div>
+            <div class="list-item text-green-900">
+              <i class="fas fa-star item-icon text-green-600"></i>
+              <div>
+                <p class="font-bold text-lg mb-1">Fidelidade</p>
+                <p class="text-gray-600 leading-snug">Acúmulo de pontos e cashback que retornam parte do valor gasto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Column: Cons -->
+        <div class="col-card col-dont shadow-sm">
+          <div class="col-header text-red-800">
+            <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mr-4 text-red-600">
+              <i class="fas fa-user-tag text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Contras: Riscos</h3>
+              <p class="text-sm opacity-75">O custo invisível</p>
+            </div>
+          </div>
+          <div class="item-list">
+            <div class="list-item text-red-900">
+              <i class="fas fa-database item-icon text-red-600"></i>
+              <div>
+                <p class="font-bold text-lg mb-1">Coleta Excessiva</p>
+                <p class="text-gray-600 leading-snug">Criação de perfis detalhados sobre sua saúde e rotina que valem
+                  mais que o desconto.</p>
+              </div>
+            </div>
+            <div class="list-item text-red-900">
+              <i class="fas fa-filter-circle-dollar item-icon text-red-600"></i>
+              <div>
+                <p class="font-bold text-lg mb-1">Limitação de Escolhas</p>
+                <p class="text-gray-600 leading-snug">O perfilamento pode manipular preços ou restringir o que é
+                  ofertado a você.</p>
+              </div>
+            </div>
+            <div class="list-item text-red-900">
+              <i class="fas fa-lock-open item-icon text-red-600"></i>
+              <div>
+                <p class="font-bold text-lg mb-1">Risco de Vazamento</p>
+                <p class="text-gray-600 leading-snug">Grandes bases de dados são alvos de ataques, expondo seu CPF e
+                  histórico.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Tip -->
+      <div class="tip-container shadow-sm">
+        <i class="fas fa-lightbulb text-2xl mr-4 text-blue-600"></i>
+        <div>
+          <p class="font-bold text-lg">Dica de Ouro</p>
+          <p class="text-sm text-blue-800">Coloque na balança: "Esse desconto vale a exposição permanente do meu
+            histórico?" Na dúvida, proteja seu CPF.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

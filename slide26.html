@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Checklist de Privacidade</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .brand-stripe {
+      width: 20px;
+      height: 100%;
+      background-color: #003366;
+      /* Azul Institucional Escuro */
+      flex-shrink: 0;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px 80px;
+      /* Reduced top/bottom padding slightly to fit content */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 15px;
+    }
+
+    .title-accent {
+      width: 60px;
+      height: 6px;
+      background-color: #00aaff;
+      /* Azul Ciano */
+      margin-bottom: 15px;
+      border-radius: 3px;
+    }
+
+    /* Checklist specific styles */
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      /* Reduced gap to fit more items */
+      flex: 1;
+    }
+
+    .checklist-card {
+      background-color: #f8fafc;
+      border-left: 5px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 15px 20px;
+      display: flex;
+      align-items: flex-start;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .checklist-card.priority {
+      border-left-color: #00aaff;
+      background-color: #f0f9ff;
+    }
+
+    .check-circle {
+      width: 32px;
+      /* Smaller icon circle */
+      height: 32px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 2px solid #00aaff;
+      color: #00aaff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+
+    .checklist-card.priority .check-circle {
+      background-color: #00aaff;
+      color: #ffffff;
+    }
+
+    .card-content h3 {
+      font-size: 1.1rem;
+      /* Adjusted font size */
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 4px;
+      margin-top: 0;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      /* Adjusted font size */
+      color: #64748b;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* Footer tip */
+    .tip-box {
+      margin-top: 20px;
+      background-color: #ecfdf5;
+      /* Light green for variety/positive tip */
+      border: 1px solid #6ee7b7;
+      border-radius: 8px;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      color: #065f46;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide-container shadow-2xl">
+    <!-- Faixa Lateral -->
+    <div class="brand-stripe"></div>
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+      <!-- Cabeçalho -->
+      <div class="header">
+        <div class="title-accent"></div>
+        <h2 class="text-4xl font-bold text-gray-900 mb-2">Checklist de Privacidade</h2>
+        <p class="text-lg text-gray-500 font-light">Verificações essenciais para manter sua vida digital segura e
+          protegida.</p>
+      </div>
+      <!-- Grid de Checklist -->
+      <div class="checklist-grid">
+        <!-- Item 1 -->
+        <div class="checklist-card priority">
+          <div class="check-circle">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="card-content">
+            <h3>Revisão Mensal</h3>
+            <p>Verifique configurações de privacidade em redes sociais e apps mensalmente. Ajuste consentimentos e
+              remova o que não usa mais.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="checklist-card priority">
+          <div class="check-circle">
+            <i class="fas fa-filter"></i>
+          </div>
+          <div class="card-content">
+            <h3>Permissões Mínimas</h3>
+            <p>Revogue acesso à câmera, microfone e localização de aplicativos que não precisam desses recursos para
+              funcionar.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="checklist-card priority">
+          <div class="check-circle">
+            <i class="fas fa-key"></i>
+          </div>
+          <div class="card-content">
+            <h3>2FA Ativo</h3>
+            <p>Certifique-se de que a autenticação em duas etapas está ativada em e-mails, redes sociais e bancos.
+              Prefira apps autenticadores.</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="checklist-card">
+          <div class="check-circle">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <div class="card-content">
+            <h3>Backups Testados</h3>
+            <p>Não apenas faça backups; teste a restauração periodicamente para garantir que seus arquivos importantes
+              estão seguros.</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="checklist-card">
+          <div class="check-circle">
+            <i class="fas fa-link"></i>
+          </div>
+          <div class="card-content">
+            <h3>Links e QR Codes</h3>
+            <p>Tenha cautela antes de clicar ou escanear. Verifique a URL de destino e evite acessar códigos de origem
+              desconhecida.</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="checklist-card">
+          <div class="check-circle">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+          <div class="card-content">
+            <h3>Descarte Seguro</h3>
+            <p>Vai vender ou doar o aparelho? Realize a exclusão segura (reset de fábrica) e remova todos os vínculos de
+              conta.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Dica de Rodapé -->
+      <div class="tip-box">
+        <i class="fas fa-book-open text-green-600 text-xl mr-3"></i>
+        <p class="font-medium">Dica: Leia os termos de uso e políticas de privacidade. Entenda como seus dados serão
+          usados antes de aceitar.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
